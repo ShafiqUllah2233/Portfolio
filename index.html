@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Shafiqullah Khan - Frontend Web Developer & Software Engineering student specializing in React, MERN Stack, and modern web technologies">
+    <meta name="keywords" content="Frontend Developer, Web Developer, React, MERN Stack, Portfolio">
+    <meta name="author" content="Shafiqullah Khan">
+    <title>Shafiqullah Khan - Frontend Web Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">SK<span class="dot">.</span></a>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <span class="pulse-dot"></span>
+                    Available for opportunities
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Shafiqullah Khan</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span id="typed-text"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Passionate web developer crafting responsive and user-friendly experiences
+                    with modern frameworks and technologies.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Get In Touch
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/ShafiqUllah2233" target="_blank" rel="noopener noreferrer"
+                        class="social-link" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shafiq-ullah-khan-938a23218" target="_blank"
+                        rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:shafiqullahkhan033@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get To Know Me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        Passionate web developer with expertise in creating responsive and user-friendly websites
+                        using modern frameworks and technologies.
+                    </p>
+                    <p>
+                        I'm proficient in front-end development, delivering high-quality solutions tailored to client
+                        needs.
+                        Currently pursuing a Bachelor's degree in Software Engineering at FAST NUCES Islamabad, where I
+                        also
+                        serve as a Teaching Assistant for Data Structures.
+                    </p>
+                    <p>
+                        My experience spans across various roles including Frontend Development, Web Development, and
+                        collaborative team projects. I'm skilled in the MERN stack and passionate about creating
+                        exceptional user experiences.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Islamabad, Pakistan</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>03471321033</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>shafiqullahkhan033@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Flask</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">DevOps</span>
+                        <span class="skill-tag">MERN Stack</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Gradio</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">MLFlow</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ShafiqUllah2233" target="_blank" rel="noopener noreferrer"
+                                class="project-link" aria-label="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">BookStore</h3>
+                    <p class="project-description">
+                        Full-stack Bookstore application using React for the frontend with reusable components and
+                        Node.js with Express for the backend. Features include browsing, searching, and purchasing
+                        books, along with user authentication and a secure database.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">Node.js</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ShafiqUllah2233" target="_blank" rel="noopener noreferrer"
+                                class="project-link" aria-label="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Weather App</h3>
+                    <p class="project-description">
+                        Real-time weather application providing temperature, humidity, and forecasts. Features
+                        location-based updates, unit toggles, and a clean user-friendly interface built with
+                        modern web technologies.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Tailwind</span>
+                        <span class="tech-badge">Bootstrap</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ShafiqUllah2233" target="_blank" rel="noopener noreferrer"
+                                class="project-link" aria-label="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Movie Recommendation System Backend</h3>
+                    <p class="project-description">
+                        Backend for a Movie Recommendation System using Express.js and MongoDB. Features user
+                        authentication, movie database management, ratings, reviews, recommendations, and advanced
+                        search/filter options with admin controls.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">APIs</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ShafiqUllah2233" target="_blank" rel="noopener noreferrer"
+                                class="project-link" aria-label="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">SportsHub Platform</h3>
+                    <p class="project-description">
+                        Online platform helping users organize and join local sports matches and tournaments.
+                        Features include match scheduling, venue booking, team rankings, and tournament management,
+                        making sports coordination easy and accessible.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">JavaFX</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">CSS</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-dice"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ShafiqUllah2233" target="_blank" rel="noopener noreferrer"
+                                class="project-link" aria-label="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Ludo Simulator Game</h3>
+                    <p class="project-description">
+                        Ludo simulator game that generates moves randomly, allowing players to roll virtual dice
+                        and progress tokens based on dice outcome. Replicates classic board game mechanics with
+                        automated turns and random gameplay using C and SFML.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">C</span>
+                        <span class="tech-badge">SFML</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career Journey</span>
+                <h2 class="section-title">Work Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Sep 2024 - Dec 2024</div>
+                        <h3 class="timeline-title">Teaching Assistant for Data Structure</h3>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Fast NUCES
+                        </div>
+                        <p class="timeline-description">
+                            Scholarship holder position focusing on evaluation of quizzes, assignments, and projects.
+                            Conducted research to design comprehensive assignments and projects for students.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-pill">Data Structures</span>
+                            <span class="skill-pill">SFML</span>
+                            <span class="skill-pill">C++</span>
+                            <span class="skill-pill">Excel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jun 2024 - Sep 2024</div>
+                        <h3 class="timeline-title">Frontend Developer</h3>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            CodeCraft Solutions
+                        </div>
+                        <p class="timeline-description">
+                            Developed responsive user interfaces using React.js and Next.js. Collaborated with
+                            the design team to implement UI/UX improvements and deliver high-quality web applications.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-pill">React</span>
+                            <span class="skill-pill">Next.js</span>
+                            <span class="skill-pill">TypeScript</span>
+                            <span class="skill-pill">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2023 - Jun 2023</div>
+                        <h3 class="timeline-title">Web Development</h3>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            ProgrammersTech
+                        </div>
+                        <p class="timeline-description">
+                            Worked with different teams on various web development projects. Gained extensive
+                            experience with MERN stack and modern web technologies.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-pill">React</span>
+                            <span class="skill-pill">MongoDB</span>
+                            <span class="skill-pill">Tailwind</span>
+                            <span class="skill-pill">Bootstrap</span>
+                            <span class="skill-pill">MERN Stack</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Academic Background</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-period">Sep 2022 - Present</div>
+                    <h3 class="education-degree">Bachelor of Science in Software Engineering</h3>
+                    <div class="education-school">
+                        <i class="fas fa-university"></i>
+                        FAST NUCES Islamabad
+                    </div>
+                    <p class="education-description">
+                        Currently pursuing BSSE degree with focus on software development, algorithms,
+                        data structures, and modern web technologies.
+                    </p>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="education-period">2019 - 2021</div>
+                    <h3 class="education-degree">FSC Pre-Engineering</h3>
+                    <div class="education-school">
+                        <i class="fas fa-school"></i>
+                        Khpal Kor Model School and College Swat
+                    </div>
+                    <p class="education-description">
+                        Completed intermediate education with focus on Mathematics, Physics, and Chemistry.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages & Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="languages-section">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-language"></i>
+                        Languages
+                    </h3>
+                    <div class="languages-grid">
+                        <div class="language-item">
+                            <span class="language-name">Pashto</span>
+                            <span class="language-level">Native</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">English</span>
+                            <span class="language-level">B2+</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Urdu</span>
+                            <span class="language-level">B2+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-info-section">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-address-card"></i>
+                        Contact Information
+                    </h3>
+                    <div class="contact-cards">
+                        <a href="mailto:shafiqullahkhan033@gmail.com" class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h4>Email</h4>
+                                <p>shafiqullahkhan033@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="tel:03471321033" class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h4>Phone</h4>
+                                <p>03471321033</p>
+                            </div>
+                        </a>
+
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h4>Location</h4>
+                                <p>Islamabad, Pakistan</p>
+                            </div>
+                        </div>
+
+                        <a href="https://github.com/ShafiqUllah2233" target="_blank" rel="noopener noreferrer"
+                            class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h4>GitHub</h4>
+                                <p>View my repositories</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/shafiq-ullah-khan-938a23218" target="_blank"
+                            rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h4>LinkedIn</h4>
+                                <p>Connect with me</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Shafiqullah Khan. All rights reserved.</p>
+            <p class="footer-tagline">Built with <i class="fas fa-heart"></i> and passion for web development</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
